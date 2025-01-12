@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Tax Report</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Tax Report</h2>
+        <table class="report">
+            <tr>
+                <th>Detail</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>{{ tax_data['name'] }}</td>
+            </tr>
+            <tr>
+                <td>Gross Salary</td>
+                <td>{{ tax_data['gross_salary'] }}</td>
+            </tr>
+            <tr>
+                <td>HRA Exemption</td>
+                <td>{{ tax_data['hra_exemption'] }}</td>
+            </tr>
+            <tr>
+                <td>Taxable Income</td>
+                <td>{{ tax_data['taxable_income'] }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

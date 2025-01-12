@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Input Data</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Your Financial Details</h2>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="number" name="gross_salary" placeholder="Gross Salary" required>
+            <input type="number" name="basic_salary" placeholder="Basic Salary" required>
+            <input type="number" name="pf" placeholder="Provident Fund (PF)" required>
+            <input type="number" name="life_insurance" placeholder="Life Insurance Premium" required>
+            <input type="number" name="health_insurance" placeholder="Health Insurance Premium" required>
+            <select name="city_type" required>
+                <option value="" disabled selected>City Type</option>
+                <option value="metro">Metro</option>
+                <option value="non-metro">Non-Metro</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
